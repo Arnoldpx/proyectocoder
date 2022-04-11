@@ -1,0 +1,321 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*maquetado de html Domotica*/
+body{
+    background-color: antiquewhite;
+}
+.containerDo{
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "header header"
+                          "main main"
+                          "section1 section1"
+                          "section2 section3"
+                          "section4 section5"
+                          "footer footer";                    
+}
+.headerDo{
+    display: flex;
+    justify-content:space-between;
+    grid-area: header;  
+    margin: 1rem;
+}
+.menuDo ul{
+    display: flex;
+}
+nav ul li{
+  
+    list-style: none;
+    margin: 0.5rem;
+    background-color: rgb(153, 152, 132);
+    padding: 0.3rem;
+    border-radius: 1rem; 
+    font-size: 1.2rem; 
+}
+
+
+.mainDo{
+    grid-area: main;
+}
+.mainDo img{
+    width: 100%;
+}
+.sectionDo1{
+    grid-area: section1;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.sectionDo1 ul{
+    display: flex;
+    justify-content: space-around;
+}
+.sectionDo1 ul li{
+    list-style: none;
+    margin: 1rem;
+    padding: 0.3rem;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+.containerDo h3{
+    font-size: 1.3rem;
+    margin: 1rem;
+}
+.containerDo p{
+    ext-align: center;
+    margin: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    font-size: 1.3;
+}
+.sectionDo2{
+    grid-area: section2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionDo3{
+    grid-area: section3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionDo4{
+    grid-area: section4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+.sectionDo5{
+    grid-area: section5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+.imgVoz1, .imgIluminacion, .imgClimatizacion, .imgSeguridad{
+    width: 80%;
+}    
+.footer{
+    display: flex;
+    flex-direction: row;
+    grid-area: footer;
+    background-color: aliceblue;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+.vinculos img{
+    width: 15%;
+    margin: 1rem;
+}
+
+/* media queries desktop first*/
+
+@media only screen and (max-width: 480px){
+    .containerDo{
+        height: 80vh;
+        display: grid;
+        grid-template-areas: "header "
+                              "main "
+                              "section1"
+                              "section2" 
+                              "section3"
+                              "section4" 
+                              "section5"
+                              "footer";                    
+    }
+    .mainDo img{
+        display: none;
+    }
+    .headerDo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.8rem;
+    }
+    .headerDo ul li{
+        font-size: 1rem;
+    }
+    
+    .sectionDo1{
+        font-size: 0.8rem;
+    }
+    .sectionDo2 p, h3{
+        font-size: 0.8rem;
+    }   
+    .sectionDo3 p, h3{
+        font-size: 0.8rem;
+    }   
+    .sectionDo4 p, h3{
+        font-size: 0.8rem;
+    }   
+    .sectionDo5 p, h3{
+        font-size: 0.8rem;
+    }   
+    
+}
+
+/*maquetado de html nuestra empresa*/
+
+.mainEm h2{
+    text-align: center;
+    font-size: 2rem;
+}
+.titulosNosotros ul{
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+    font-size: 2rem;
+}
+.titulosNosotros ul li{
+    background-color: rgb(145, 141, 137);
+    list-style: none;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.quienesSomos{
+    background-color:rgb(145, 141, 137) ;
+    padding: 3rem;
+    margin: 2rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+}
+.mision{
+    background-color:rgb(145, 141, 137) ;
+    padding: 3rem;
+    margin: 2rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+}
+.domotica{
+    background-color:rgb(145, 141, 137) ;
+    padding: 3rem;
+    margin: 2rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+}
+@media only screen and (max-width: 480px){
+
+    .titulosNosotros ul{
+        margin: 1rem;
+        font-size: 1.2rem;
+    }
+    .titulosNosotros ul li{
+        padding: 0.5rem;
+        border-radius: 1rem;
+    }
+    .quienesSomos{
+        padding: 2rem;
+        margin: 1rem;
+        font-size: 1rem;
+    }
+    .containerEm h3{
+        font-size: 1rem;
+
+    }
+    .mision{
+        padding: 2rem;
+        margin: 1rem;
+        font-size: 1rem;
+    }
+    .domotica{
+        padding: 2rem;
+        margin: 1rem;
+        font-size: 1rem;
+    }
+}
+
+/*maquetado html proyectos*/
+
+.proyectos{
+    display: grid;
+    grid-template-areas: "luces seguridad"
+                         " climatizacion climatizacion"
+                         "footer footer";  
+}
+.luces{
+    grid-area: luces;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.seguridad{
+    grid-area: seguridad;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.climatizacion{
+    grid-area: climatizacion;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgProyecto{
+    width: 80%;
+}
+.imgProyecto1{
+    width: 40%;
+}
+.proyectos p{
+    text-align: center;
+    margin: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    font-size: 1.3;
+}
+.proyectos h3{
+    font-size: 1.3rem;
+    margin: 1rem;
+}
+#tituloProyecto{
+    text-align:  center;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+@media only screen and (max-width: 480px){
+    .proyectos{
+        height: 80vh;
+        display: grid;
+    grid-template-areas: "luces"
+                          "seguridad"
+                         " climatizacion"
+                          "footer"; 
+    }                    
+    .proyectos p, h3{
+        font-size: 0.8rem;
+    }       
+}
+
+/*maquetado html contactos*/
+.contacto{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;  
+}
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.contacto h2{
+    text-align: center;
+}

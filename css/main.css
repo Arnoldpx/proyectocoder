@@ -3,9 +3,11 @@
     padding: 0px;
 }
 /*maquetado de html Domotica*/
+
 body{
-    background-color: antiquewhite;
+    background-image: linear-gradient(to left ,rgba(250, 244, 236, 0.897) , rgb(184, 179, 179));
 }
+
 .containerDo{
     height: 80vh;
     display: grid;
@@ -20,19 +22,32 @@ body{
     display: flex;
     justify-content:space-between;
     grid-area: header;  
-    margin: 1rem;
+    background-color: black;
+    padding: 2rem;
 }
+.headerDo h1{
+    color: blanchedalmond;
+}
+.headerDo h1 span:hover{
+    color: brown;
+}
+
 .menuDo ul{
     display: flex;
+}
+.menuDo a{
+    color: blanchedalmond;
+
 }
 nav ul li{
   
     list-style: none;
     margin: 0.5rem;
-    background-color: rgb(153, 152, 132);
-    padding: 0.3rem;
-    border-radius: 1rem; 
     font-size: 1.2rem; 
+}
+
+.menuDo a:hover{
+    color: blue;  
 }
 
 
@@ -51,14 +66,23 @@ nav ul li{
     display: flex;
     justify-content: space-around;
 }
+.sectionDo1 h2{
+    margin: 1rem;
+    border-bottom: 1rem;
+}
 .sectionDo1 ul li{
     list-style: none;
     margin: 1rem;
     padding: 0.3rem;
+    color: black;
+}
+.sectionDo1 ul li:hover
+{
+    transform: scale(1.2);
 }
 ul li a{
     text-decoration: none;
-    color: black;
+    color: rgb(14, 14, 14);
 }
 .containerDo h3{
     font-size: 1.3rem;
@@ -110,14 +134,19 @@ ul li a{
     display: flex;
     flex-direction: row;
     grid-area: footer;
-    background-color: aliceblue;
+    background-color: black;
     justify-content: space-between;
     align-items: center;
   
 }
+.footer h3{
+    color: blanchedalmond;
+    font-size: 0.7rem;
+}
 .vinculos img{
     width: 15%;
     margin: 1rem;
+
 }
 
 /* media queries desktop first*/

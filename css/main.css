@@ -18,7 +18,10 @@
 /*maquetado index*/
 .navbar a{
     color: white;
+    transition: 0.7s ease-in-out;
+    transform: scale(1.1, 1);
 }
+
 .mb-6{
     margin-bottom: 4rem;
 }
@@ -47,25 +50,7 @@ body{
                           "section4 section5"
                           "footer footer";                    
 }
-.headerDo{
-    display: flex;
-    justify-content:space-between;
-    grid-area: header;  
-    background-color: black;
-    padding: 2rem;
-   
-}
-.headerDo h1{
-    color: blanchedalmond;
-}
-.headerDo h1:hover{
-    transition: 0.7s ease-in-out;
-    transform: scale(1.1, 1);
-}
-.headerDo h1 .span-smart:hover{
-    color: rgb(170, 162, 162);
-    transition: all 3s;
-}
+
 
 .menuDo ul{
     display: flex;
@@ -474,18 +459,4 @@ ul li a{
     }       
 }
 
-/*maquetado html contactos*/
-/*.contacto{
-    height: 80vh;
-    display: flex;
-    flex-direction: column;  
-}
-.formulario{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-.contacto h2{
-    text-align: center;
-}*/
+

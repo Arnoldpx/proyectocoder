@@ -14,6 +14,23 @@
     
     box-sizing: content-box;
 }
+
+/*maquetado index*/
+.navbar a{
+    color: white;
+}
+.mb-6{
+    margin-bottom: 4rem;
+}
+.card-img-top:hover{
+    opacity:0.9;
+}
+.card{
+    border-radius: 10px;
+    align-items: center;
+    -webkit-box-shadow: -13px 19px 40px 7px rgba(54,54,54,0.53), 15px 3px 40px 7px rgba(54,54,54,0.53); 
+    box-shadow: -13px 19px 40px 7px rgba(54,54,54,0.53), 15px 3px 40px 7px rgba(54,54,54,0.53);
+}
 /*maquetado de html Domotica*/
 
 body{
@@ -458,7 +475,7 @@ ul li a{
 }
 
 /*maquetado html contactos*/
-.contacto{
+/*.contacto{
     height: 80vh;
     display: flex;
     flex-direction: column;  
@@ -471,4 +488,4 @@ ul li a{
 }
 .contacto h2{
     text-align: center;
-}
+}*/

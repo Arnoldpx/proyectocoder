@@ -15,6 +15,8 @@
     box-sizing: content-box;
 }
 
+
+
 /*maquetado index*/
 .navbar a{
     color: white;
@@ -362,13 +364,12 @@ ul li a{
 }
 
 .tituloProyecto{
-        display: inline-block;
-        width: 180px;
-        border-bottom: 1px solid grey;  /*Borde inferiror de la palabra domotica*/
-        border-radius: 1%;
-        text-align:  center;
-        font-size: 1.5rem;
-         margin: 2rem;
+   /* display: inline-block;
+    width: 180px;*/
+    margin: 1rem;
+    border-bottom: 1px solid grey;  /*Borde inferiror de la palabra domotica*/
+    border-radius: 1%;
+    text-align: center;
     }
 
     /*La palabra Proyecto escala el tamaño*/
@@ -449,10 +450,10 @@ ul li a{
     .proyectos{
         height: 80vh;
         display: grid;
-    grid-template-areas: "luces"
-                          "seguridad"
-                         " climatizacion"
-                          "footer"; 
+        grid-template-areas: "luces"
+                             "seguridad"
+                             " climatizacion"
+                             "footer"; 
     }                    
     .proyectos p, h3{
         font-size: 0.8rem;

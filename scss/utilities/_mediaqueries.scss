@@ -1,0 +1,94 @@
+
+
+@media only screen and (max-width: 480px){
+
+    .titulosNosotros ul{
+        margin: 1rem;
+        font-size: 1.2rem;
+    }
+    .titulosNosotros ul li{
+        padding: 0.5rem;
+        border-radius: 1rem;
+    }
+    .quienesSomos{
+        padding: 2rem;
+        margin: 1rem;
+        font-size: 1rem;
+    }
+    .containerEm h3{
+        font-size: 1rem;
+
+    }
+    .mision{
+        padding: 2rem;
+        margin: 1rem;
+        font-size: 1rem;
+    }
+    .domotica{
+        padding: 2rem;
+        margin: 1rem;
+        font-size: 1rem;
+    }
+}
+
+
+/* media queries desktop first proyecto*/
+
+@media only screen and (max-width: 480px){
+    .containerDo{
+        height: 80vh;
+        display: grid;
+        grid-template-areas: "header "
+                              "main "
+                              "section1"
+                              "section2" 
+                              "section3"
+                              "section4" 
+                              "section5"
+                              "footer";                    
+    }
+    .mainDo img{
+        display: none;
+    }
+    .headerDo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.8rem;
+    }
+    .headerDo ul li{
+        font-size: 1rem;
+    }
+    
+    .sectionDo1{
+        font-size: 0.8rem;
+    }
+    .sectionDo2 p, h3{
+        font-size: 0.8rem;
+    }   
+    .sectionDo3 p, h3{
+        font-size: 0.8rem;
+    }   
+    .sectionDo4 p, h3{
+        font-size: 0.8rem;
+    }   
+    .sectionDo5 p, h3{
+        font-size: 0.8rem;
+    }   
+    
+}
+
+
+@media only screen and (max-width: 480px){
+    .proyectos{
+                height: 80vh;
+                display: grid;
+                grid-template-areas: "luces"
+                                     "seguridad"
+                                     " climatizacion"
+                                     "footer"; 
+              }                    
+    .proyectos p, h3{
+                      font-size: 0.8rem;
+                    }       
+}

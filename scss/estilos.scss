@@ -38,6 +38,7 @@
         }     
     }
 }
+
 /*maquetado de html Domotica*/
 body{
     background-image: linear-gradient(to left ,rgba(211, 208, 202, 0.897) , rgb(255, 255, 255));
@@ -164,7 +165,7 @@ body{
     justify-content:space-between;
     align-items: center;
     h3{
-        color: #ffffff;
+        color: map-get($mapacolor, color3)
       }
     .vinculos-a
     {
@@ -198,7 +199,7 @@ body{
                 }
             }
 .quienesSomos{
-    background-color:rgb(145, 141, 137) ;
+    background-color:map-get($mapacolor, color2 ) ;
     padding: 3rem;
     margin: 2rem;
     border-radius: 1rem;

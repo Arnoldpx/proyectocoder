@@ -1,0 +1,38 @@
+
+/*maquetado de html nuestra empresa*/
+
+.mainEm h2{
+    text-align: center;
+    font-size: 2rem;
+}
+.titulosNosotros
+            {        
+              ul{
+                  display: flex;
+                  justify-content: space-around;
+                  margin: 2rem;
+                  font-size: 2rem;
+                }
+              li{
+                  background-color: rgb(145, 141, 137);
+                  list-style: none;
+                  text-decoration: none;
+                                padding: 1rem;
+                  border-radius: 1rem;
+                }
+            }
+.quienesSomos{
+    background-color:map-get($mapacolor, color2 ) ;
+    padding: 3rem;
+    margin: 2rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+}
+.mision{
+    @extend .quienesSomos;
+    
+}
+.domotica{
+    @extend .quienesSomos;
+
+}

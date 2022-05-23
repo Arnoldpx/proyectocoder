@@ -7,7 +7,7 @@ body{
 .containerDo{
     height: 80vh;
     display: grid;
-    grid-template-areas: "header header"
+    grid-template-areas: 
                           "main main"
                           "section1 section1"
                           "section2 section3"
@@ -104,7 +104,7 @@ body{
 /*SECCION 3 ILUMINACION INTELIGENTE FINALIZA*/
 /*SECCION 4 CLIMATIZACION INICIA*/
 .sectionDo4{   
-    @include stylescard1();
+    @include stylescard();
    grid-area: section4;
 }
     /*SECCION 4 CLIMATIZACION FINALIZA*/

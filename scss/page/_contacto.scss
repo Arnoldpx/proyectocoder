@@ -1,0 +1,92 @@
+.containerCo{
+  height: 80vh;
+  display: grid;
+  grid-template-areas: "main main"
+                       "titulo titulo"
+                       "formulario mapa"
+                       "footer footer"
+                        ;
+}
+.tituloCo{
+
+  grid-area: titulo;
+  text-align: center;
+  margin-top: 3rem;
+  font-family:'Times New Roman', Times, serif;
+ 
+
+
+}
+.formulario{
+  
+  text-align: center;
+  grid-area: formulario;
+  form{
+    display: flex;
+    margin: 0 auto;
+    width:450px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border-radius: 7px;
+    background-color: rgba(43, 42, 40, 0.7);
+    box-sizing:border-box;
+    margin-top:18%;
+    text-align: center;
+    margin-right: 0%;
+    justify-content: center;
+    align-content: center;
+    height: 500px;
+    input,textarea,select{
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 7px;
+      box-sizing:border-box;
+      font-size: 17px;
+      border: none;
+     }
+     h2{
+      color: #fff;
+      font-size: 40px;
+      margin-bottom: 20px;
+      display:inline-block;
+      font-family: monospace;
+     }
+   }
+
+ 
+}
+.mapa{
+  text-align: center;
+  grid-area: mapa;
+     iframe{
+       margin-left:0%;
+       display: flex;
+       margin-top: 15%;
+       justify-content: center;
+       align-content: center;
+       height: 500px;
+     }
+
+}
+
+ textarea{
+  max-height: 200px;
+  min-height:100px;
+  max-width: 100%;
+ }
+ #enviar{
+  background-color: #31384A;
+  color: #fff;
+  padding: 1px;
+  border: none;
+  width: 100%;
+  font-family: monospace;
+  font-weight: bolder;
+  font-size: 2em;
+  &:hover{
+  cursor:pointer;
+ }
+}
+ 
+
+

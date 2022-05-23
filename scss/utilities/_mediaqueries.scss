@@ -1,4 +1,11 @@
 
+@media only screen and (max-width: 480px){
+    .conteiner-fluid.card{
+        margin-bottom: 2rem;
+    }
+}
+
+
 
 @media only screen and (max-width: 480px){
 
@@ -32,7 +39,7 @@
 }
 
 
-/* media queries desktop first proyecto*/
+/* media queries desktop first */
 
 @media only screen and (max-width: 480px){
     .containerDo{
@@ -78,17 +85,38 @@
     
 }
 
-
+//media de html proyecto
 @media only screen and (max-width: 480px){
-    .proyectos{
+    .containerPro{
                 height: 80vh;
                 display: grid;
-                grid-template-areas: "luces"
-                                     "seguridad"
-                                     " climatizacion"
+               grid-template-areas:  "main"
+                                     "section1"
+                                     "section2"
+                                     "section3"
+                                     "section4"
                                      "footer"; 
               }                    
     .proyectos p, h3{
                       font-size: 0.8rem;
                     }       
 }
+//media de html contacto
+@media only screen and (max-width: 480px){
+    .containerCo{
+      display: grid;
+      grid-template-areas: "main"
+                            "titulo"
+                            "formulario"
+                            "mapa"
+                            "footer";
+    }
+    .mapa{
+      margin: 1rem;
+    }
+    iframe{
+      width: 100%;
+      margin: 2rem;
+    }
+  }
+  

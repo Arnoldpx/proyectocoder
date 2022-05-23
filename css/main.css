@@ -1,7 +1,6 @@
 .navbar a {
   color: white;
-  transition: 0.7s ease-in-out;
-  /* transform: scale(1.1, 1);*/ }
+  transition: 0.7s ease-in-out; }
 
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255,1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
@@ -24,7 +23,7 @@ body {
 .containerDo {
   height: 80vh;
   display: grid;
-  grid-template-areas: "header header" "main main" "section1 section1" "section2 section3" "section4 section5" "footer footer"; }
+  grid-template-areas: "main main" "section1 section1" "section2 section3" "section4 section5" "footer footer"; }
   .containerDo h3 {
     font-size: 1.3rem;
     margin: 1rem; }
@@ -108,22 +107,26 @@ body {
   -webkit-box-shadow: -13px 19px 40px 7px rgba(54, 54, 54, 0.53), 15px 3px 40px 7px rgba(54, 54, 54, 0.53);
   box-shadow: -13px 19px 40px 7px rgba(54, 54, 54, 0.53), 15px 3px 40px 7px rgba(54, 54, 54, 0.53);
   border: 5px hidden #d2a48d;
-  border-radius: 10px 40px 40px 10px;
+  border-radius: 40px 10px 10px 40px;
   margin: 50px;
   grid-area: section3; }
 
 /*SECCION 3 ILUMINACION INTELIGENTE FINALIZA*/
 /*SECCION 4 CLIMATIZACION INICIA*/
 .sectionDo4 {
+  border: 3px hidden #d2a48d;
+  border-radius: 10px 40px 40px 10px;
+  grid-area: luces;
   display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 50px;
+  background-color: #f5f5f5;
   -webkit-box-shadow: -13px 19px 40px 7px rgba(54, 54, 54, 0.53), 15px 3px 40px 7px rgba(54, 54, 54, 0.53);
   box-shadow: -13px 19px 40px 7px rgba(54, 54, 54, 0.53), 15px 3px 40px 7px rgba(54, 54, 54, 0.53);
-  border: 5px hidden #d2a48d;
-  border-radius: 10px 40px 40px 10px;
-  margin: 50px;
   grid-area: section4; }
 
 /*SECCION 4 CLIMATIZACION FINALIZA*/
@@ -136,7 +139,7 @@ body {
   -webkit-box-shadow: -13px 19px 40px 7px rgba(54, 54, 54, 0.53), 15px 3px 40px 7px rgba(54, 54, 54, 0.53);
   box-shadow: -13px 19px 40px 7px rgba(54, 54, 54, 0.53), 15px 3px 40px 7px rgba(54, 54, 54, 0.53);
   border: 5px hidden #d2a48d;
-  border-radius: 10px 40px 40px 10px;
+  border-radius: 40px 10px 10px 40px;
   margin: 50px;
   grid-area: section5; }
 
@@ -147,7 +150,11 @@ body {
 /*maquetado de html nuestra empresa*/
 .mainEm h2 {
   text-align: center;
-  font-size: 2rem; }
+  font-size: 2rem;
+  margin: 1rem; }
+
+.titulosNosotros a {
+  color: black; }
 
 .titulosNosotros ul {
   display: flex;
@@ -156,102 +163,133 @@ body {
   font-size: 2rem; }
 
 .titulosNosotros li {
-  background-color: #918d89;
+  background-color: #d4cfca;
   list-style: none;
   text-decoration: none;
   padding: 1rem;
   border-radius: 1rem; }
 
 .quienesSomos, .mision, .domotica {
-  background-color: #918d89;
+  background-color: #d3cbc3;
   padding: 3rem;
   margin: 2rem;
   border-radius: 1rem;
   font-size: 1.5rem; }
 
-/*maquetado html proyectos*/
-.proyectos {
+.containerPro {
+  height: 80vh;
   display: grid;
-  grid-template-areas: "luces seguridad" " climatizacion climatizacion" "footer footer"; }
-  .proyectos .proyectos h2 {
-    text-align: center; }
+  grid-template-areas: "main main" "section1 section1" "section2 section3" "section4 section4" "footer footer"; }
+  .containerPro h3 {
+    font-size: 1.3rem;
+    margin: 1rem; }
+  .containerPro p {
+    Text-align: center;
+    margin: 1rem;
+    font-size: 1.3; }
 
-.tituloProyecto {
-  /* display: inline-block;
-    width: 180px;*/
-  margin: 1rem;
-  border-bottom: 1px solid grey;
-  /*Borde inferiror de la palabra domotica*/
-  border-radius: 1%;
-  text-align: center; }
-  .tituloProyecto:hover {
-    transition: 0.9s ease-in-out;
-    transform: scale(1.05, 1.05); }
+.menuDo ul {
+  display: flex; }
+  .menuDo ul li {
+    list-style: none;
+    margin: 0.5rem;
+    font-size: 1.2rem; }
 
-.luces {
-  border: 3px hidden #d2a48d;
-  border-radius: 10px 40px 40px 10px;
-  grid-area: luces;
-  display: flex;
-  flex-wrap: wrap;
-  flex-shrink: 0;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 50px;
-  background-color: #f5f5f5;
-  -webkit-box-shadow: -13px 19px 40px 7px rgba(54, 54, 54, 0.53), 15px 3px 40px 7px rgba(54, 54, 54, 0.53);
-  box-shadow: -13px 19px 40px 7px rgba(54, 54, 54, 0.53), 15px 3px 40px 7px rgba(54, 54, 54, 0.53);
-  grid-area: luces; }
+.menuDo a {
+  color: blanchedalmond; }
+  .menuDo a:hover {
+    color: #808085; }
 
-.seguridad {
-  border: 3px hidden #d2a48d;
-  border-radius: 10px 40px 40px 10px;
-  grid-area: luces;
-  display: flex;
-  flex-wrap: wrap;
-  flex-shrink: 0;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 50px;
-  background-color: #f5f5f5;
-  -webkit-box-shadow: -13px 19px 40px 7px rgba(54, 54, 54, 0.53), 15px 3px 40px 7px rgba(54, 54, 54, 0.53);
-  box-shadow: -13px 19px 40px 7px rgba(54, 54, 54, 0.53), 15px 3px 40px 7px rgba(54, 54, 54, 0.53);
-  grid-area: seguridad; }
+.mainDo {
+  grid-area: main; }
+  .mainDo img {
+    width: 100%; }
 
-.climatizacion {
-  border: 3px hidden #d2a48d;
-  border-radius: 10px 40px 40px 10px;
-  grid-area: luces;
-  display: flex;
-  flex-wrap: wrap;
-  flex-shrink: 0;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 50px;
-  background-color: #f5f5f5;
-  -webkit-box-shadow: -13px 19px 40px 7px rgba(54, 54, 54, 0.53), 15px 3px 40px 7px rgba(54, 54, 54, 0.53);
-  box-shadow: -13px 19px 40px 7px rgba(54, 54, 54, 0.53), 15px 3px 40px 7px rgba(54, 54, 54, 0.53);
-  grid-area: climatizacion; }
-
-.imgProyecto {
-  width: 80%; }
-
-.imgProyecto1 {
-  width: 55%; }
-
-.proyectos p {
+.sectionDo1 {
+  grid-area: section1;
   text-align: center;
-  margin: 1rem;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 1.2rem;
-  font-size: 1.3; }
+  font-size: 1.3rem; }
+  .sectionDo1 ul {
+    display: flex;
+    justify-content: space-around; }
+    .sectionDo1 ul li {
+      list-style: none;
+      margin: 1rem;
+      padding: 0.3rem;
+      color: black; }
+      .sectionDo1 ul li:hover {
+        transform: scale(1.2); }
+      .sectionDo1 ul li a {
+        text-decoration: none;
+        color: #0e0e0e; }
+  .sectionDo1 h2 {
+    display: inline-block;
+    width: 180px;
+    margin: 1rem;
+    border-bottom: 1px solid grey;
+    /*Borde inferiror de la palabra domotica*/
+    border-radius: 1%; }
+    .sectionDo1 h2:hover {
+      transition: 0.9s ease-in-out;
+      transform: scale(1.05, 1.05); }
+  .sectionDo1 .a-sectionDo1:hover {
+    transition: all .3s;
+    color: #645f5f;
+    text-shadow: 2px 0px 9px rgba(0, 0, 0, 0.9); }
 
-.proyectos h3 {
-  font-size: 1.3rem;
-  margin: 1rem; }
+/*SECCION 2 CONTROL POR VOZ INICIA*/
+.sectionDo2 {
+  border: 3px hidden #d2a48d;
+  border-radius: 10px 40px 40px 10px;
+  grid-area: luces;
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  background-color: #f5f5f5;
+  -webkit-box-shadow: -13px 19px 40px 7px rgba(54, 54, 54, 0.53), 15px 3px 40px 7px rgba(54, 54, 54, 0.53);
+  box-shadow: -13px 19px 40px 7px rgba(54, 54, 54, 0.53), 15px 3px 40px 7px rgba(54, 54, 54, 0.53);
+  grid-area: section2; }
+
+/*SECCION 3 ILUMINACION INTELIGENTE INICIA*/
+.sectionDo3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: -13px 19px 40px 7px rgba(54, 54, 54, 0.53), 15px 3px 40px 7px rgba(54, 54, 54, 0.53);
+  box-shadow: -13px 19px 40px 7px rgba(54, 54, 54, 0.53), 15px 3px 40px 7px rgba(54, 54, 54, 0.53);
+  border: 5px hidden #d2a48d;
+  border-radius: 40px 10px 10px 40px;
+  margin: 50px;
+  grid-area: section3; }
+
+/*SECCION 4 CLIMATIZACION INICIA*/
+.sectionDo4 {
+  border: 3px hidden #d2a48d;
+  border-radius: 10px 40px 40px 10px;
+  grid-area: luces;
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  background-color: #f5f5f5;
+  -webkit-box-shadow: -13px 19px 40px 7px rgba(54, 54, 54, 0.53), 15px 3px 40px 7px rgba(54, 54, 54, 0.53);
+  box-shadow: -13px 19px 40px 7px rgba(54, 54, 54, 0.53), 15px 3px 40px 7px rgba(54, 54, 54, 0.53);
+  grid-area: section4; }
+
+.imgVoz1, .imgIluminacion, .imgClimatizacion, .imgSeguridad {
+  width: 50%; }
+
+@media only screen and (max-width: 480px) {
+  .conteiner-fluid.card {
+    margin-bottom: 2rem; } }
 
 @media only screen and (max-width: 480px) {
   .titulosNosotros ul {
@@ -275,7 +313,7 @@ body {
     margin: 1rem;
     font-size: 1rem; } }
 
-/* media queries desktop first proyecto*/
+/* media queries desktop first */
 @media only screen and (max-width: 480px) {
   .containerDo {
     height: 80vh;
@@ -302,20 +340,97 @@ body {
     font-size: 0.8rem; } }
 
 @media only screen and (max-width: 480px) {
-  .proyectos {
+  .containerPro {
     height: 80vh;
     display: grid;
-    grid-template-areas: "luces" "seguridad" " climatizacion" "footer"; }
+    grid-template-areas: "main" "section1" "section2" "section3" "section4" "footer"; }
   .proyectos p, h3 {
     font-size: 0.8rem; } }
+
+@media only screen and (max-width: 480px) {
+  .containerCo {
+    display: grid;
+    grid-template-areas: "main" "titulo" "formulario" "mapa" "footer"; }
+  .mapa {
+    margin: 1rem; }
+  iframe {
+    width: 100%;
+    margin: 2rem; } }
+
+.containerCo {
+  height: 80vh;
+  display: grid;
+  grid-template-areas: "main main" "titulo titulo" "formulario mapa" "footer footer"; }
+
+.tituloCo {
+  grid-area: titulo;
+  text-align: center;
+  margin-top: 3rem;
+  font-family: 'Times New Roman', Times, serif; }
+
+.formulario {
+  text-align: center;
+  grid-area: formulario; }
+  .formulario form {
+    display: flex;
+    margin: 0 auto;
+    width: 450px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border-radius: 7px;
+    background-color: rgba(43, 42, 40, 0.7);
+    box-sizing: border-box;
+    margin-top: 18%;
+    text-align: center;
+    margin-right: 0%;
+    justify-content: center;
+    align-content: center;
+    height: 500px; }
+    .formulario form input, .formulario form textarea, .formulario form select {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 7px;
+      box-sizing: border-box;
+      font-size: 17px;
+      border: none; }
+    .formulario form h2 {
+      color: #fff;
+      font-size: 40px;
+      margin-bottom: 20px;
+      display: inline-block;
+      font-family: monospace; }
+
+.mapa {
+  text-align: center;
+  grid-area: mapa; }
+  .mapa iframe {
+    margin-left: 0%;
+    display: flex;
+    margin-top: 15%;
+    justify-content: center;
+    align-content: center;
+    height: 500px; }
+
+textarea {
+  max-height: 200px;
+  min-height: 100px;
+  max-width: 100%; }
+
+#enviar {
+  background-color: #31384A;
+  color: #fff;
+  padding: 1px;
+  border: none;
+  width: 100%;
+  font-family: monospace;
+  font-weight: bolder;
+  font-size: 2em; }
+  #enviar:hover {
+    cursor: pointer; }
 
 * {
   margin: 0px;
   padding: 0px;
-  font-family: 'Mulish', sans-serif;
-  font-family: 'Nanum Gothic', sans-serif;
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'Red Hat Mono', monospace;
   font-family: 'Roboto', sans-serif;
   box-sizing: content-box; }
 

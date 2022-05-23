@@ -1,23 +1,14 @@
-@import "utilities/index";
-@import "utilities/domotica";
-@import "utilities/nuestraEmpresa";
-@import "utilities/proyectos";
+@import "page/index";
+@import "page/domotica";
+@import "page/nuestraEmpresa";
+@import "page/proyectos";
 @import "utilities/mediaqueries";
+@import "page/contacto";
 
 *{
     margin: 0px;
     padding: 0px;
-
-    font-family: 'Mulish', sans-serif; 
-
-    font-family: 'Nanum Gothic', sans-serif;
-
-    font-family: 'Open Sans', sans-serif;
-
-    font-family: 'Red Hat Mono', monospace;
-
     font-family: 'Roboto', sans-serif;
-    
     box-sizing: content-box;
 }
 

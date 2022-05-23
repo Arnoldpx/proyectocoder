@@ -4,9 +4,14 @@
 .mainEm h2{
     text-align: center;
     font-size: 2rem;
+    margin: 1rem;
+    
 }
 .titulosNosotros
-            {        
+            {     
+                a{
+                    color: black;
+                }   
               ul{
                   display: flex;
                   justify-content: space-around;
@@ -14,7 +19,7 @@
                   font-size: 2rem;
                 }
               li{
-                  background-color: rgb(145, 141, 137);
+                  background-color: rgb(212, 207, 202);
                   list-style: none;
                   text-decoration: none;
                                 padding: 1rem;

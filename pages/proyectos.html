@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Pedi tu presupuesto para automatizar tu casa, y lograr una casa Inteligente">
+
+     <!--fuentes-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
     <!--link de iconos-->
     <script src="https://kit.fontawesome.com/4ab894f3e3.js" crossorigin="anonymous"></script>
     <!--link de bootstrap 5.1-->
@@ -16,77 +21,85 @@
 </head>
 <body>
           <!-- menu de boostrap-->
-    <div>
-      <nav class="navbar navbar-expand-lg navbar-white bg-dark ">
-        <div class="container-fluid">
-          <a class="navbar-brand " href="index.html"><h1>SmartHome</h1></a> 
-          <button class=" navbar-toggler" type="button " data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
-            <span class="navbar-toggler-icon"> </span>
-          </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./nuestraempresa.html">Nuestra Empresa</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./domotica.html">Domotica</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./proyectos.html">Proyectos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./contacto.html">Contactos</a>
-                  </li>
-                
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </div>
-    <div class="containerPro">
-            <main class="mainDo">
-                <div class="imagenProyecto">
-                    <img src="../img/casa.jpg" alt="casaInteligente">
-                </div>
-            </main>
-            <h2 class="tituloProyecto">Proyectos</h2>
-            
-            <div class="proyectos">
-                <section class="luces">
-                   <h3>Intalacion de Iluminacion</h3>
-                    <img class="imgProyecto" src="../img/luces.jpg" alt="">
-                 <p>Instalación de sistemas de control exclusivos para las villas, iluminación, suelo radiante, aire acondicionado, persianas, estores, piscina, re-circulación de aire, vídeo portero inteligente.limonero2P
-
-                  Solución completa, de gestión de la vivienda, todos los sistemas se manejan fácilmente desde pantallas táctiles en color ubicadas en cada una de las estancias, diseños personalizados de paneles táctiles para este tipo de villas, vídeo portero inteligente, todo el control de la vivienda está siempre en las manos del cliente, siempre desde su IPad o Smartphone.</p>
-                </section>
-        
-                <section class="seguridad">
-                   <h3>Instalacion de Seguridad</h3>
-                   <img class="imgProyecto" src="../img/instalacion.jpg" alt="">
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ipsam, et corrupti voluptatibus aspernatur tempore saepe laboriosam fugit, ducimus temporibus adipisci, officia ipsa! Soluta nam minus suscipit illo dolor a?</p>
-                </section>
-    
-               <section class="climatizacion">
-                   <h3>Instalacion de climatizacion</h3>
-                   <img class="imgProyecto1" src="../img/climatitzacio1.jpg" alt="">
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ipsam, et corrupti voluptatibus aspernatur tempore saepe laboriosam fugit, ducimus temporibus adipisci, officia ipsa! Soluta nam minus suscipit illo dolor a?</p>
+          <div>
+            <nav class="navbar navbar-expand-lg navbar-white bg-dark ">
+              <div class="container-fluid">
+                <a class="navbar-brand " href="index.html"><h1>SmartHome</h1></a> 
+                <button class=" navbar-toggler" type="button " data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
+                  <span class="navbar-toggler-icon"> </span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="./nuestraempresa.html">Nuestra Empresa</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="./domotica.html">Domotica</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="./proyectos.html">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="./contacto.html">Contactos</a>
+                        </li>
+                      
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+          </div>
+      
+                    
+          <div class="containerPro">
+              <main class="mainDo">
+                  <img src ="../img/casa.jpg" alt="imagen casa">
+              </main> 
+              <section class="sectionDo1">
+                   <h2>Proyectos</h2>  
+              </section>
+      
+               
+              <section class="sectionDo2">
+      
+                  <h3 id="voz">Intalacion de Iluminacion</h3>
+                   <img  class="imgVoz1" src="../img/luces.jpg" alt="comandoporvoz">
+                   <p class="parrafoVoz1">                           
+                    Instalacion Sistemas de control: iluminación, aire acondicionado, persianas, toldos, filtro de piscina, re-circulación de aire, vídeo portero inteligente integrado en pantallas domótica, escenas, relojes horarios para fachadas, luces automáticas por presencia, entre otros.
+                   </p>  
+      
+              </section>
+      
+              <section class="sectionDo3">
+                  <h3 id="iluminacion">seguridad</h3>
+                  <img class="imgIluminacion" src="../img/instalacion.jpg" alt="iluminacion">
+                   <p lass="parrafoVoz2">
+                        En esta vivienda se hizo una instalacion de un sistema de domotica para seguridad,el mismo te permite controlar alarma, programar los cerramiento del hogar,y la deteccion de incendio y fuegas de gas, este se puede acceder atraves de su smartphone o una pantalla tactil instalada en la vivienda.  
+                  </p>   
+              </section>
+      
+              <section class="sectionDo4">
+                  <h3 id="confort">Climatizacion</h3>
+                  <img class="imgClimatizacion" src="../img/climatizacion.jpg" alt="Climatizacion">
+                  <p class="parrafoVoz3">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui odit quod est temporibus consequuntur illum aliquam. Corrupti commodi corporis molestiae nisi minus voluptatibus repellat distinctio expedita! Quibusdam a amet rerum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptatem sequi accusamus suscipit officia blanditiis quaerat laboriosam, velit quas! Voluptas blanditiis doloribus natus, aspernatur possimus facilis vitae iste placeat nihil!Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore 
+                  </p>
                </section>
-            </div>
-     
-        <footer class="footer">
-            <h3>
-               Copygraf- Todo los derechos reservados 
-            </h3> 
-            <div class="vinculos">  
-              <a class="vinculos-a"  target="_blank" href="https://www.instagram.com"><i class="fa-brands fa-instagram" ></i> 
-              <a class="vinculos-a"  target="_blank" href=https://www.facebook.com><i class="fa-brands fa-facebook-f"></i>  
-              <a class="vinculos-a"  target="_blank" href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i>
-            </div> 
-        </footer>
-    </div>  
+      
+              <footer class="footer">
+                  <h3>
+                     Copygraf- Todo los derechos reservados 
+                  </h3> 
+                  <div class="vinculos">  
+                    <a class="vinculos-a"  target="_blank" href="https://www.instagram.com"><i class="fa-brands fa-instagram" ></i> 
+                    <a class="vinculos-a"  target="_blank" href=https://www.facebook.com><i class="fa-brands fa-facebook-f"></i>  
+                    <a class="vinculos-a"  target="_blank" href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i>
+                  </div> 
+              </footer>
+          </div>
+
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>        
 </body>

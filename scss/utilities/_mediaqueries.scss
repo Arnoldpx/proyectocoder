@@ -103,6 +103,7 @@
 }
 //media de html contacto
 
+ 
 @media only screen and (max-width: 480px){
     .containerCo{
     
@@ -113,17 +114,57 @@
                              "footer"
                               ;
     } 
-
-
-    .mapa{
-      margin: 2rem;
+  
+    .formulario{
       display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0%;
       
     
     }
-    iframe{
+  
+    .mapa{
+      display: flex;
+      align-items: center;
+            iframe{
       
-     margin: 2rem;
-    }
+                    margin-top: 0%;
+                    width: 100%; 
+                  }
+           }
   }
   
+  @media only screen and (max-width: 700px){
+    .containerCo{
+    
+        display: grid;
+        grid-template-areas: "titulo"
+                             "formulario"
+                              "mapa"
+                             "footer"
+                              ;
+    } 
+  
+    .formulario{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0%;
+       form{
+         align-items: center;
+         margin: 0%;
+       }
+    }
+  
+    .mapa{
+      display: flex;
+      justify-content:start;
+      align-items: center;
+            iframe{
+      
+                    margin-top: 0%;
+                    width: 100%; 
+                  }
+           }
+  }

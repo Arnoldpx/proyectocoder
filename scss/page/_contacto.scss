@@ -1,12 +1,13 @@
 .containerCo{
   height: 80vh;
   display: grid;
-  grid-template-areas: "main main"
-                       "titulo titulo"
+  grid-template-areas: "titulo titulo"
                        "formulario mapa"
                        "footer footer"
                         ;
 }
+
+
 .tituloCo{
 
   grid-area: titulo;
@@ -18,7 +19,7 @@
 
 }
 .formulario{
-  
+  display: inline-block;
   text-align: center;
   grid-area: formulario;
   form{
@@ -56,12 +57,14 @@
  
 }
 .mapa{
+  display: inline-block;
+  width: 450px;
   text-align: center;
   grid-area: mapa;
      iframe{
        margin-left:0%;
        display: flex;
-       margin-top: 15%;
+       margin-top: 27%;
        justify-content: center;
        align-content: center;
        height: 500px;

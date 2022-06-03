@@ -102,21 +102,28 @@
                     }       
 }
 //media de html contacto
+
 @media only screen and (max-width: 480px){
     .containerCo{
-      display: grid;
-      grid-template-areas: "main"
-                            "titulo"
-                            "formulario"
-                            "mapa"
-                            "footer";
-    }
+    
+        display: grid;
+        grid-template-areas: "titulo"
+                             "formulario"
+                              "mapa"
+                             "footer"
+                              ;
+    } 
+
+
     .mapa{
-      margin: 1rem;
+      margin: 2rem;
+      display: flex;
+      
+    
     }
     iframe{
-      width: 100%;
-      margin: 2rem;
+      
+     margin: 2rem;
     }
   }
   

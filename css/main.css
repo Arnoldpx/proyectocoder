@@ -16,6 +16,9 @@
   .card .card-img-top:hover {
     opacity: 0.9; }
 
+.row {
+  width: 100%; }
+
 /*maquetado de html Domotica*/
 body {
   background-image: linear-gradient(to left, rgba(211, 208, 202, 0.897), white); }
@@ -23,7 +26,11 @@ body {
 .containerDo {
   height: 80vh;
   display: grid;
-  grid-template-areas: "main main" "section1 section1" "section2 section3" "section4 section5" "footer footer"; }
+  grid-template-areas: "main main"
+ "section1 section1"
+ "section2 section3"
+ "section4 section5"
+ "footer footer"; }
   .containerDo h3 {
     font-size: 1.3rem;
     margin: 1rem; }
@@ -179,7 +186,11 @@ body {
 .containerPro {
   height: 80vh;
   display: grid;
-  grid-template-areas: "main main" "section1 section1" "section2 section3" "section4 section4" "footer footer"; }
+  grid-template-areas: "main main"
+ "section1 section1"
+ "section2 section3"
+ "section4 section4"
+ "footer footer"; }
   .containerPro h3 {
     font-size: 1.3rem;
     margin: 1rem; }
@@ -318,7 +329,14 @@ body {
   .containerDo {
     height: 80vh;
     display: grid;
-    grid-template-areas: "header " "main " "section1" "section2"  "section3" "section4"  "section5" "footer"; }
+    grid-template-areas: "header "
+ "main "
+ "section1"
+ "section2" 
+ "section3"
+ "section4" 
+ "section5"
+ "footer"; }
   .mainDo img {
     display: none; }
   .headerDo {
@@ -343,24 +361,35 @@ body {
   .containerPro {
     height: 80vh;
     display: grid;
-    grid-template-areas: "main" "section1" "section2" "section3" "section4" "footer"; }
+    grid-template-areas: "main"
+ "section1"
+ "section2"
+ "section3"
+ "section4"
+ "footer"; }
   .proyectos p, h3 {
     font-size: 0.8rem; } }
 
 @media only screen and (max-width: 480px) {
   .containerCo {
+    height: 80vh;
     display: grid;
-    grid-template-areas: "main" "titulo" "formulario" "mapa" "footer"; }
+    grid-template-areas: "titulo"
+ "formulario"
+ "mapa"
+ "footer"; }
   .mapa {
-    margin: 1rem; }
+    margin: 2rem;
+    display: flex; }
   iframe {
-    width: 100%;
     margin: 2rem; } }
 
 .containerCo {
   height: 80vh;
   display: grid;
-  grid-template-areas: "main main" "titulo titulo" "formulario mapa" "footer footer"; }
+  grid-template-areas: "titulo titulo"
+ "formulario mapa"
+ "footer footer"; }
 
 .tituloCo {
   grid-area: titulo;
@@ -369,6 +398,7 @@ body {
   font-family: 'Times New Roman', Times, serif; }
 
 .formulario {
+  display: inline-block;
   text-align: center;
   grid-area: formulario; }
   .formulario form {
@@ -401,12 +431,14 @@ body {
       font-family: monospace; }
 
 .mapa {
+  display: inline-block;
+  width: 450px;
   text-align: center;
   grid-area: mapa; }
   .mapa iframe {
     margin-left: 0%;
     display: flex;
-    margin-top: 15%;
+    margin-top: 27%;
     justify-content: center;
     align-content: center;
     height: 500px; }
@@ -432,7 +464,7 @@ textarea {
   margin: 0px;
   padding: 0px;
   font-family: 'Roboto', sans-serif;
-  box-sizing: content-box; }
+  box-sizing: border-box; }
 
 .footer {
   margin-top: 200px;
